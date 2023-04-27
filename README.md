@@ -4,10 +4,10 @@ general git_cfg to be used around: aliases, color in tcshell
 
 ## HOW-TO
 
-clone this  repository at your **home directory**  (c:\users\your_user_id), so that a folder will be available there: c:\users\your_user_id\git_cfg
+clone this  repository at your **home directory**  (in windows it would be like: c:\users\your_user_id), so that a folder will be available there like (in windows): c:\users\your_user_id\git_cfg
 
-### windows
-look in your home directory for file .bash_profile, which shall be available after installing git client
+### windows / linux
+look in your home directory for file .bash_profile, .bashrc or similar, which is run at startup and shall be available after installing git client.
 
 then add this line:
 
