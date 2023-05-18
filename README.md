@@ -15,7 +15,8 @@ then add this line:
 
 ## test new entries
 
-modify .bash_aliases as per your needs
-in git bash at home directory use this:
+* modify .bash_aliases as per your needs
+
+* in git bash at home directory use this:
 
     source  ~/git_cfg/.bash_aliases
