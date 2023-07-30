@@ -2,7 +2,7 @@ alias gb='git branch'
 alias gbl='git branch -l' #list local
 alias gbr='git branch -r'
 alias gba='git branch -a' #list all, includes remotes
-alias gbd='git branch -d'#delete
+alias gbd='git branch -d' #delete
 alias gbs='git branch --sort=-committerdate'
 alias gcl='git clone'
 alias gclr='git clone --recursive'
