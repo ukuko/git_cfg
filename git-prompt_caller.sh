@@ -19,11 +19,12 @@ WHITE="\[\033[0;37m\]"
 THE_END="\[\033[0m\]" # This is needed at the end... 
 
 
-PS1="${debian_chroot:+($debian_chroot)}$GREEN\u$WHITE@$RED\h$WHITE:$YELLOW\w $CYAN$(__git_ps1)$THE_END\$ "
+#PS1="${debian_chroot:+($debian_chroot)}$GREEN\u$WHITE@$RED\h$WHITE:$YELLOW\w $CYAN$(__git_ps1)$THE_END\$ "
 
+PS1="$GREEN \u$WHITE@$RED\h$WHITE:$YELLOW\w$CYAN$(__git_ps1)$THE_END\$ "
+#PS1="$GREEN \u$WHITE@$RED\h$WHITE:$YELLOW\W$CYAN$(__git_ps1 ' (%s)')$THE_END\$ "
 
-
-# PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+#PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 # use existing PS1 settings
 #PROMPT_COMMAND=$(sed -r 's|^(.+)(\\\$\s*)$|__git_ps1 "\1" "\2"|' <<< $PS1)  
 
