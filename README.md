@@ -17,11 +17,14 @@ then add this line:
 
 and for prompt 
 
-    (shell)
-    test -f ~/git_cfg/git-prompt.sh && . ~/git_cfg/git-prompt.sh
 
     (tcshell)
     test -f ~/git_cfg/gitprompt.csh && . ~/git_cfg/gitprompt.csh
+
+    (shell)
+    test -f ~/git_cfg/gitprompt_caller.sh && . ~/git_cfg/git-prompt_caller.sh
+
+
 
 ## bash_aliases: test new entries
 
@@ -29,10 +32,4 @@ and for prompt
 
 * in git bash at home directory use this:
 
-    source  ~/git_cfg/.bash_aliases
-
-    (and for shell:)
-    source ~/git_cfg/git-prompt.sh
-
-    (for tcshell:)
-    source ~/git_cfg/gitprompt.csh
+    source  ~/.bashrc (or ~/.bashprofile)
