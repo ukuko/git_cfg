@@ -22,15 +22,11 @@ and for prompt
     test -f ~/git_cfg/gitprompt.csh && . ~/git_cfg/gitprompt.csh
 
     (shell)
-    be sure to uncomment:
-    force_color_prompt=yes  
+    look for this line (if not found, add all below)
+    force_color_prompt=no  
 
     then add:
-    parse_git_branch() {
-        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-    }
 
-    test -f ~/git_cfg/git-prompt_caller.sh && . ~/git_cfg/git-prompt_caller.sh     
 
 
 ## bash_aliases: test new entries
