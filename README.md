@@ -22,14 +22,15 @@ and for prompt
     test -f ~/git_cfg/gitprompt.csh && . ~/git_cfg/gitprompt.csh
 
     (shell)
-    look for this line (if not found, add all below)
+    look for this line (if not found, add replace lines:
     force_color_prompt=no  
-    
-    and replace that line with the content of: gitprompt.sh
 
     until this line:
 
-    # If this is an xterm set the title to user@host:dir  
+    unset color_prompt force_color_prompt
+
+    
+    and replace them with the content of: gitprompt.sh
 
 
 
