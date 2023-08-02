@@ -22,6 +22,10 @@ and for prompt
     test -f ~/git_cfg/gitprompt.csh && . ~/git_cfg/gitprompt.csh
 
     (shell)
+    be sure to uncomment:
+    force_color_prompt=yes  
+
+    then add:
     parse_git_branch() {
         git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
     }
