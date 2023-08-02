@@ -17,11 +17,22 @@ then add this line:
 
 and for prompt 
 
-    (shell)
-    test -f ~/git_cfg/git-prompt.sh && . ~/git_cfg/git-prompt.sh
 
     (tcshell)
     test -f ~/git_cfg/gitprompt.csh && . ~/git_cfg/gitprompt.csh
+
+    (shell)
+    look for this line (if not found, add replace lines:
+    force_color_prompt=no  
+
+    until this line:
+
+    unset color_prompt force_color_prompt
+
+    
+    and replace them with the content of: gitprompt.sh
+
+
 
 ## bash_aliases: test new entries
 
@@ -29,10 +40,19 @@ and for prompt
 
 * in git bash at home directory use this:
 
-    source  ~/git_cfg/.bash_aliases
+    source  ~/.bashrc (or ~/.bashprofile)
 
-    (and for shell:)
-    source ~/git_cfg/git-prompt.sh
+# TL;DR
 
-    (for tcshell:)
-    source ~/git_cfg/gitprompt.csh
+inspiration:
+
+https://thucnc.medium.com/how-to-show-current-git-branch-with-colors-in-bash-prompt-380d05a24745
+
+https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
+
+also, I checked other option using below, but didnt work and was a big change on settings, so stopped:
+
+https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
+
+
+
