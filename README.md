@@ -22,8 +22,11 @@ and for prompt
     test -f ~/git_cfg/gitprompt.csh && . ~/git_cfg/gitprompt.csh
 
     (shell)
-    test -f ~/git_cfg/gitprompt_caller.sh && . ~/git_cfg/git-prompt_caller.sh
+    parse_git_branch() {
+        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+    }
 
+    test -f ~/git_cfg/git-prompt_caller.sh && . ~/git_cfg/git-prompt_caller.sh     
 
 
 ## bash_aliases: test new entries
@@ -33,3 +36,18 @@ and for prompt
 * in git bash at home directory use this:
 
     source  ~/.bashrc (or ~/.bashprofile)
+
+# TL;DR
+
+inspiration:
+
+https://thucnc.medium.com/how-to-show-current-git-branch-with-colors-in-bash-prompt-380d05a24745
+
+https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
+
+also, I checked other option using below, but didnt work and was a big change on settings, so stopped:
+
+https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
+
+
+

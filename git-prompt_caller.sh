@@ -1,12 +1,3 @@
-source ~/git_cfg/git-prompt.sh # Show git branch name at command prompt  
-
-export GIT_PS1_SHOWCOLORHINTS=true
-export GIT_PS1_SHOWDIRTYSTATE=true
-export GIT_PS1_SHOWUNTRACKEDFILES=true
-export GIT_PS1_SHOWUPSTREAM="auto"
-#PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
-
-
 # https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
 
 RED="\[\033[1;31m\]"
