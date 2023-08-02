@@ -12,7 +12,7 @@ THE_END="\[\033[0m\]" # This is needed at the end...
 
 #PS1="${debian_chroot:+($debian_chroot)}$GREEN\u$WHITE@$RED\h$WHITE:$YELLOW\w $CYAN$(__git_ps1)$THE_END\$ "
 
-PS1="$GREEN \u$WHITE@$RED\h$WHITE:$YELLOW\w$CYAN$(parse_git_branch)$THE_END\$ "
+export PS1="$GREEN \u$WHITE@$RED\h$WHITE:$YELLOW\w$CYAN$(parse_git_branch)$THE_END\$ "
 #PS1="$GREEN \u$WHITE@$RED\h$WHITE:$YELLOW\W$CYAN$(__git_ps1 ' (%s)')$THE_END\$ "
 
 #PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
