@@ -22,10 +22,9 @@ and for prompt
     test -f ~/git_cfg/gitprompt.csh && . ~/git_cfg/gitprompt.csh
 
     (shell)
-    look for this line (if not found, add all below)
-    force_color_prompt=no  
-
-    then add:
+    #look for this line (if not found, add all below)
+    #force_color_prompt=no  
+    source  ~/git_cfg/gitprompt.sh
 
 
 
