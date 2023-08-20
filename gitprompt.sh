@@ -27,7 +27,7 @@ parse_git_branch() {
 #THE_END="\[\033[0m\]" # This is needed at the end...
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[0;32m\]\u\[\033[0;37m\]@\[\033[1;31m\]\h\[\033[0;37m\]:\[\033[1;33m\]\w\[\033[1;36m\]$(parse_git_branch)\[\033[0m\]\$'
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[0;32m\]\u\[\033[0;37m\]@\[\033[1;31m\]\h\[\033[0;37m\]:\[\033[1;33m\]\w\[\033[1;36m\] $(parse_git_branch)\[\033[0m\]\$'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$'
 fi
