@@ -8,29 +8,36 @@ color in: tcshell / shell
 
 clone this  repository at your **home directory**  (in windows it would be like: c:\users\your_user_id), so that a folder will be available there like (in windows): c:\users\your_user_id\git_cfg
 
-### windows / linux
+### aliases
 look in your home directory for file **.bash_profile**, **.bashrc** or similar, which is run at startup and shall be available after installing git client.
 
 then add this line:
 
     test -f ~/git_cfg/.bash_aliases && . ~/git_cfg/.bash_aliases
 
-and for prompt 
-
+### prompt
+look in your home directory for file **.bash_profile**, **.bashrc** or similar, which is run at startup and shall be available after installing git client.
 
     (tcshell)
     test -f ~/git_cfg/gitprompt.csh && . ~/git_cfg/gitprompt.csh
 
     (shell)
-    look for this line (if not found, add replace lines:
-    force_color_prompt=no  
+    look for this line (if not found, add) 
 
-    until this line:
+    '
+        # uncomment for a colored prompt, if the terminal has the capability; turned
+        # off by default to not distract the user: the focus in a terminal window
+        # should be on the output of commands, not on the prompt
+        #force_color_prompt=yes
+    '
 
+    replace lines between
+    #force_color_prompt=yes  
+    and:
     unset color_prompt force_color_prompt
 
     
-    and replace them with the content of: gitprompt.sh
+   with the content of: gitprompt.sh
 
 
 
