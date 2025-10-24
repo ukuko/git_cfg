@@ -35,4 +35,4 @@ unset color_prompt force_color_prompt
 
 # Clean up after ourselves...
 # unset RED GREEN YELLOW BLUE MAGENTA CYAN WHITE END
-#############           
+#############
