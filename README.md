@@ -9,9 +9,14 @@ color in: tcshell / shell
 clone this  repository at your **home directory**  (in windows it would be like: c:\users\your_user_id), so that a folder will be available there like (in windows): c:\users\your_user_id\git_cfg
 
 ### aliases
-look in your home directory for file **.bash_profile**, **.bashrc** or similar, which is run at startup and shall be available after installing git client.
+look in your home directory for bash file  which runs at startup and shall be available after installing git client.
 
-then add this line:
+- In Debian-based Linux (or WSL using it) it is mostly: **.bashrc**
+- And in Windows: **.bash_profile**
+
+(otherwise, identify proper file in your system)
+
+Then add this line:
 
     test -f ~/git_cfg/.bash_aliases && . ~/git_cfg/.bash_aliases
 
